@@ -30,6 +30,8 @@ var WarningSchema = mongoose.Schema({
 	humidity : String,
 	dew_point : String,
 	pressure: String,
+	communication_tower_exist : Number
+
 
 });
 

@@ -23,8 +23,8 @@ var Salam = new warning({
 
 	AreaName : 'AlSalamCity',
 
-	latitude  : [31.401243, 31.423731], 
-	longitude : [30.155328, 30.176402],
+	longitude  : [31.401243, 31.423731], 
+	latitude : [30.155328, 30.176402],
 	
 
 	attitude  : '500m', 
@@ -47,6 +47,41 @@ var Salam = new warning({
 	humidity : '123KM',
 	dew_point : '2.123',
 	pressure: '3232P',
+	communication_tower_exist : 1
+
+
+});
+//Another Bad Weather 
+var SheroukArea = new warning({
+
+	AreaName : 'SheroukArea',
+
+	longitude  : [31.550503, 31.669979], 
+	latitude :   [30.090995, 30.169979],
+	
+
+	attitude  : '500m', 
+	
+	warning : {
+		type : 'BADCOND',
+		code : 2
+	},
+	
+	
+	//Manual Generated -- WebServices Update
+	
+	land : 'Citu',
+	temp : '40C',
+
+	wind_direction : '12 N',
+	wind_speed : '10 KSPH',
+	
+	visibility : '1',
+	humidity : '123KM',
+	dew_point : '2.123',
+	pressure: '3232P',
+	communication_tower_exist : 1
+
 
 });
 
@@ -55,8 +90,8 @@ var AirPort = new warning({
 
 	AreaName : 'CairoAirPort',
 
-	latitude  : [31.376095, 31.541576], 
-	longitude : [30.086539, 30.148903],
+	longitude  : [31.376095, 31.541576], 
+	latitude : [30.086539, 30.148903],
 	
 
 	attitude  : '500m', 
@@ -79,6 +114,8 @@ var AirPort = new warning({
 	humidity : '123KM',
 	dew_point : '2.123',
 	pressure: '3232P',
+	communication_tower_exist : 1
+
 
 });
 
@@ -86,8 +123,8 @@ var Juzirra = new warning({
 
 	AreaName : 'Juzirra',
 
-	latitude  : [31.211858, 31.238551], 
-	longitude : [30.095513, 30.130186],
+	longitude  : [31.211858, 31.238551], 
+	latitude : [30.095513, 30.130186],
 	
 
 	attitude  : '500m', 
@@ -110,6 +147,8 @@ var Juzirra = new warning({
 	humidity : '123KM',
 	dew_point : '2.123',
 	pressure: '3232P',
+	communication_tower_exist : 0
+
 
 });
 
@@ -117,8 +156,8 @@ var WaterArea = new warning({
 
 	AreaName : 'WaterArea',
 
-	latitude  : [31.226900, 31.233144], 
-	longitude : [31.226964, 30.094993],
+	longitude  : [31.226911, 31.233144], 
+	latitude : [31.226964, 30.094993],
 	
 
 	attitude  : '500m', 
@@ -141,6 +180,8 @@ var WaterArea = new warning({
 	humidity : '123KM',
 	dew_point : '2.123',
 	pressure: '3232P',
+	communication_tower_exist : 0
+
 
 });
 
@@ -148,3 +189,4 @@ module.exports.Salam = Salam;
 module.exports.AirPort = AirPort;
 module.exports.Juzirra = Juzirra;
 module.exports.WaterArea = WaterArea;
+module.exports.SheroukArea = SheroukArea;
